@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Duplicate Word Finder</title>
+  <title>重复单词查找</title>
   <link rel="canonical" href="https://duplicateword.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://codepen.io/finnhvman/pen/MQyJxV.css'>
 <link rel='stylesheet' href='https://codepen.io/finnhvman/pen/YeXwNY.css'>
@@ -18,33 +18,32 @@
 <main>
   <div id="actions">
     <div>
-      <button id="copy" class="pure-material-button-contained">Copy</button>
-      <button id="clear" class="pure-material-button-text">Clear</button>
+      <button id="copy" class="pure-material-button-contained">复制</button>
+      <button id="clear" class="pure-material-button-text">清空</button>
     </div>
-    <a id="upgrade" class="pure-material-button-contained" href="https://duplicateword.com" target="_blank" title="Takes you to duplicateword.com">Update Now</a>
     <label class="pure-material-switch">
             <input id="spellcheck" type="checkbox" checked>
-            <span>Spell Check</span>
+            <span>拼写检查</span>
         </label>
   </div>
   <div id="options">
     <label class="pure-material-slider">
       <input id="length" type="range" min="1" max="10" value="4">
-      <span>Minimum Word Length: <output>4</output></span>
+      <span>最小单词长度： <output>4</output></span>
     </label>
   </div>
   <hr>
   <div id="text">
     <textarea>
-Paste your text by pressing Ctrl+V or ⌘+V. (Once you click here, these instructions will be cleared for your convenience ;)
+按 Ctrl+V 或 ⌘+V 粘贴文本。(点击此处后，为方便起见，这些说明将被清除）。
 
-The slider on the top right can be used to adjust the minimum length of words to detect. The default setting is 4, so words like 'and', 'for', 'the', etc. won't pollute the analysis. The duplicate words can be found below the slider highlighted by various colors. The list is sorted by the number of occurrence starting with the highest. The highlighting for any individual word can be turned off by clicking on the word in the list.
+右上角的滑块可用于调整检测单词的最小长度。默认设置为 4，因此 “and”、“for”、“the ”等词不会影响分析结果。重复词可以在滑块下方找到，并用不同颜色突出显示。列表按出现次数从高到低排序。单击列表中的单词即可关闭任何单词的高亮显示。
 
-You can edit your text here, duplicates are detected real time. When you're finished editing, you can copy or clear the result using the corresponding buttons. You can also turn off the spell checker if you don't need it.
+您可以在此编辑文本，重复内容会被实时检测到。编辑完成后，您可以使用相应的按钮复制或清除结果。
 
 ~~~
 
-I often find myself sending emails and messages consisting of two or three sentences. This is where I usually commit an unintentional word repetition, but only realize it after hitting send. This tool comes handy for such cases, and you're free to use it for your benefit as well! :)
+我经常发现自己发送的邮件和信息只有两三句话。在这种情况下，我通常会无意中出现单词重复，但只有在点击发送后才会意识到。在这种情况下，这个工具就派上用场了！:)
 </textarea>
     <div id="highlights"></div>
   </div>
@@ -52,17 +51,9 @@ I often find myself sending emails and messages consisting of two or three sente
 </main>
 <footer>
   <div>
-    Created by Bence Szabó (finnhvman)<br/>
+    Created by CrazyLi (PageSecOnd)<br/>
     <br/>
-    <a href="https://twitter.com/finnhvman" target="_top">Twitter</a> &nbsp; | &nbsp;
-    <a href="https://www.linkedin.com/in/finnhvman/" target="_top">LinkedIn</a> &nbsp; | &nbsp;
-    <a href="https://codepen.io/finnhvman/" target="_top">CodePen</a>
-  </div>
-<a href="https://www.buymeacoffee.com/finnhvman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-  <div>
-    Created with<br/>
-    <br/>
-    <a href="https://codepen.io/collection/nZKBZe/" target="_top">Pure CSS Material Components</a>
+    <a href="https://github.com/PageSecOnd" target="_top">GitHub</a> &nbsp; | &nbsp;
   </div>
 </footer>
 <template>
